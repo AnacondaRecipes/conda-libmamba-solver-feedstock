@@ -17,13 +17,14 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python
     - pip
     - flit-core >=3.2,<4
   run:
     - python >=3.6
-    - libmambapy >=0.22
+    - libmambapy >=0.22.1
     - conda >=4.12
+    - importlib_metadata
 
 test:
   imports:
@@ -37,5 +38,5 @@ about:
   license_family: BSD
   license_file: LICENSE
   summary: 'The fast mamba solver, now in conda!'
-  dev_url:
-  doc_url:
+  dev_url: https://github.com/conda-incubator/conda-libmamba-solver
+  doc_url: https://github.com/conda-incubator/conda-libmamba-solver/README.md
