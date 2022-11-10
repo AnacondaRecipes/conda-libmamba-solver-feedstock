@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/conda-incubator/conda-libmamba-solver/archive/refs/tags/{{ version }}.tar.gz
+  url: https://github.com/conda/conda-libmamba-solver/archive/refs/tags/{{ version }}.tar.gz
   sha256: {{ hash }}
 
 build:
@@ -36,10 +36,10 @@ test:
     - conda create --experimental-solver libmamba -n test --dry-run scipy
 
 about:
-  home: https://github.com/conda-incubator/conda-libmamba-solver
+  home: https://github.com/conda/conda-libmamba-solver
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: 'The fast mamba solver, now in conda!'
-  dev_url: https://github.com/conda-incubator/conda-libmamba-solver
-  doc_url: https://github.com/conda-incubator/conda-libmamba-solver/blob/main/README.md
+  dev_url: https://github.com/conda/conda-libmamba-solver
+  doc_url: https://github.com/conda/conda-libmamba-solver/blob/main/README.md
