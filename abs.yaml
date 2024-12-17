@@ -1,5 +1,4 @@
 channels:
-  - https://staging.continuum.io/prefect/fs/libsolv-feedstock/pr5/9598620
-  - https://staging.continuum.io/prefect/fs/mamba-feedstock/pr19/ab260d3
+  - https://staging.continuum.io/prefect/fs/mamba-feedstock/pr19/a0008f8
 build_env_vars:
   ANACONDA_ROCKET_ENABLE_PY313 : yes
