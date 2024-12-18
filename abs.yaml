@@ -1,4 +1,2 @@
-channels:
-  - https://staging.continuum.io/prefect/fs/mamba-feedstock/pr19/a0008f8
 build_env_vars:
   ANACONDA_ROCKET_ENABLE_PY313 : yes
