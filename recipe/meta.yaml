@@ -11,7 +11,7 @@ source:
   folder: src/
 
 build:
-  number: 0
+  number: 1
   # build as noarch to avoid circular dependency issues in conda when
   # adding support for new Python versions
   noarch: python
@@ -43,7 +43,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: src/LICENSE
-  summary: 'The fast mamba solver, now in conda!'
+  summary: The fast mamba solver, now in conda!
   description: |
     The conda-libmamba-solver is a new solver for the conda package manager
     which uses the solver from the mamba project behind the scenes,
