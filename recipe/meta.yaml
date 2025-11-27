@@ -39,7 +39,6 @@ test:
     - conda_libmamba_solver
   commands:
     - python -c "from importlib.metadata import version; assert(version('{{ name }}')=='{{ version }}')"
-
     - CONDA_SOLVER=libmamba conda create -n test --dry-run scipy  # [not win]  Not cross-platform.
     - conda create --solver libmamba -n test --dry-run scipy
 
@@ -63,4 +62,5 @@ extra:
     - jezdez
     - wolfv
   skip-lints:
+    - avoid_noarch
     - missing_pip_check
