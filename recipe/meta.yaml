@@ -28,6 +28,7 @@ requirements:
   run:
     - python >=3.10
     - conda >=25.9
+    # present in the conda-libmamba-solver recipe file at recipe/meta.yaml but dropped in pyproject.toml
     - libmambapy >=2
     - boltons >=23.0.0
     - msgpack-python >=1.1.1
