@@ -28,6 +28,7 @@ requirements:
   run:
     - python >=3.10
     - conda >=25.9
+    - libmambapy >=2
     - boltons >=23.0.0
     - msgpack-python >=1.1.1
     - requests >=2.28.0,<3.0.0
