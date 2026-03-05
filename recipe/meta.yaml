@@ -23,6 +23,7 @@ requirements:
     - pip
     - hatchling
     - hatch-vcs
+    - libmambapy {{ libmambapy }}
   run:
     - python >=3.10
     - conda >=26.1
