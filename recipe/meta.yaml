@@ -26,7 +26,7 @@ requirements:
     - libmambapy {{ libmambapy }}
   run:
     - python >=3.10
-    - conda >=26.1
+    - conda >=26.5
     # present in the conda-libmamba-solver recipe file at recipe/meta.yaml but dropped in pyproject.toml because libmambapy is not available on PyPI.
     - libmambapy >=2.0.0,!=2.6.2
     - boltons >=23.0.0
