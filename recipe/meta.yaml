@@ -1,5 +1,5 @@
 {% set name = "conda-libmamba-solver" %}
-{% set version = "26.4.2" %}
+{% set version = "26.6.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/conda/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: d69a45db04785a1a48d29d98ee4ce6c19147be4703866a23c6b0da1de12b5378
+  sha256: bed1f00dcd0001203aac7f60d8986965b6fbafb4e83ef8c2a4b5a726253172ec
   folder: src/
 
 build:
@@ -26,13 +26,10 @@ requirements:
     - libmambapy {{ libmambapy }}
   run:
     - python >=3.10
-    - conda >=26.1
+    - conda >=26.5
     # present in the conda-libmamba-solver recipe file at recipe/meta.yaml but dropped in pyproject.toml because libmambapy is not available on PyPI.
-    - libmambapy >=2
+    - libmambapy >=2.0.0,!=2.6.2
     - boltons >=23.0.0
-    - msgpack-python >=1.1.1
-    - requests >=2.28.0,<3.0.0
-    - zstandard >=0.15
 
 test:
   imports:
