@@ -11,7 +11,7 @@ source:
   folder: src/
 
 build:
-  number: 0
+  number: 1
   # build as noarch to avoid circular dependency issues in conda when
   # adding support for new Python versions
   noarch: python
@@ -30,6 +30,9 @@ requirements:
     # present in the conda-libmamba-solver recipe file at recipe/meta.yaml but dropped in pyproject.toml because libmambapy is not available on PyPI.
     - libmambapy >=2.0.0,!=2.6.2
     - boltons >=23.0.0
+  run_constrained:
+    - certifi >=2026.10.19
+    - ca-certificates >=2026.10.20
 
 test:
   imports:
