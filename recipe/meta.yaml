@@ -1,5 +1,5 @@
 {% set name = "conda-libmamba-solver" %}
-{% set version = "26.7.0" %}
+{% set version = "26.10.0" %}
 
 package:
   name: {{ name }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/conda/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 785d6035eedf511c6755d53a5ff34634a56427be49fd337bb6433c2270b4fdb6
+  sha256: 21f5f82d3ff2735aed7c1c676222017f85efa186c803abf66e8d38c6e1e5d788
   folder: src/
 
 build:
-  number: 1
+  number: 0
   # build as noarch to avoid circular dependency issues in conda when
   # adding support for new Python versions
   noarch: python
@@ -26,9 +26,9 @@ requirements:
     - libmambapy {{ libmambapy }}
   run:
     - python >=3.10
-    - conda >=26.5
+    - conda >=26.7.1
     # present in the conda-libmamba-solver recipe file at recipe/meta.yaml but dropped in pyproject.toml because libmambapy is not available on PyPI.
-    - libmambapy >=2.0.0,!=2.6.2
+    - libmambapy >=2.3.2,!=2.6.2
     - boltons >=23.0.0
   run_constrained:
     - certifi >=2026.10.19
